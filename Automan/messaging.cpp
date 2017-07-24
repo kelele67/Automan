@@ -25,19 +25,19 @@ namespace messaging {
     class queue {
         std::mutex mut;
         std::condition_variable cond;
-        std::queue<std::shared_ptr<message_base> > q;
+        std::queue<std::shared_ptr<message_base> > msgq;
     public:
         template <typename T>
         void push(T const& msg) {
             std::lock_guard<std::mutex> lk(mut);
-            q.push(std::make_shared<wrapped_message<T> >(msg));
+            msgq.push(std::make_shared<wrapped_message<T> >(msg));
             cond.notify_all();
         }
         std::shared_ptr<message_base> wait_and_pop() {
             std::unique_lock<std::mutex> lk(mut);
-            cond.wait(lk, [&] { return !q.empty(); });
-            auto res = q.front();
-            q.pop();
+            cond.wait(lk, [&] { return !msgq.empty(); });
+            auto res = msgq.front();
+            msgq.pop();
             return res;
         }
     };
