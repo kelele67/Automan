@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AF641171F2629E500866A3F /* messaging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AF641161F2629E500866A3F /* messaging.cpp */; };
+		3A0F4AF31F2AF3F60061A32E /* Messaging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4AF11F2AF3F60061A32E /* Messaging.cpp */; };
+		3A0F4AF61F2AF4D00061A32E /* Dispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4AF41F2AF4D00061A32E /* Dispatcher.cpp */; };
+		3A0F4AF91F2AF4E80061A32E /* ISerialisable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4AF71F2AF4E80061A32E /* ISerialisable.cpp */; };
+		3A0F4AFC1F2AF4F90061A32E /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4AFA1F2AF4F90061A32E /* Message.cpp */; };
+		3A0F4AFF1F2AF50C0061A32E /* MessageIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4AFD1F2AF50C0061A32E /* MessageIterator.cpp */; };
+		3A0F4B021F2AF5190061A32E /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4B001F2AF5190061A32E /* Context.cpp */; };
+		3A0F4B081F2B02010061A32E /* EmptyFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4B061F2B02010061A32E /* EmptyFactory.cpp */; };
+		3A0F4B0B1F2B020C0061A32E /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4B091F2B020C0061A32E /* Socket.cpp */; };
+		3A0F4B0E1F2B04990061A32E /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4B0C1F2B04990061A32E /* Exception.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A0F4AF11F2AF3F60061A32E /* Messaging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Messaging.cpp; sourceTree = "<group>"; };
+		3A0F4AF21F2AF3F60061A32E /* Messaging.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Messaging.hpp; sourceTree = "<group>"; };
+		3A0F4AF41F2AF4D00061A32E /* Dispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dispatcher.cpp; sourceTree = "<group>"; };
+		3A0F4AF51F2AF4D00061A32E /* Dispatcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dispatcher.hpp; sourceTree = "<group>"; };
+		3A0F4AF71F2AF4E80061A32E /* ISerialisable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ISerialisable.cpp; sourceTree = "<group>"; };
+		3A0F4AF81F2AF4E80061A32E /* ISerialisable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ISerialisable.hpp; sourceTree = "<group>"; };
+		3A0F4AFA1F2AF4F90061A32E /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Message.cpp; sourceTree = "<group>"; };
+		3A0F4AFB1F2AF4F90061A32E /* Message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Message.hpp; sourceTree = "<group>"; };
+		3A0F4AFD1F2AF50C0061A32E /* MessageIterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MessageIterator.cpp; sourceTree = "<group>"; };
+		3A0F4AFE1F2AF50C0061A32E /* MessageIterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MessageIterator.hpp; sourceTree = "<group>"; };
+		3A0F4B001F2AF5190061A32E /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
+		3A0F4B011F2AF5190061A32E /* Context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Context.hpp; sourceTree = "<group>"; };
+		3A0F4B061F2B02010061A32E /* EmptyFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EmptyFactory.cpp; sourceTree = "<group>"; };
+		3A0F4B071F2B02010061A32E /* EmptyFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EmptyFactory.hpp; sourceTree = "<group>"; };
+		3A0F4B091F2B020C0061A32E /* Socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
+		3A0F4B0A1F2B020C0061A32E /* Socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Socket.hpp; sourceTree = "<group>"; };
+		3A0F4B0C1F2B04990061A32E /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
+		3A0F4B0D1F2B04990061A32E /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
 		3AF6410C1F2629A600866A3F /* Automan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Automan; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AF641161F2629E500866A3F /* messaging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = messaging.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +63,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0F4AEF1F2AF3D80061A32E /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				3A0F4AF11F2AF3F60061A32E /* Messaging.cpp */,
+				3A0F4AF21F2AF3F60061A32E /* Messaging.hpp */,
+				3A0F4AF41F2AF4D00061A32E /* Dispatcher.cpp */,
+				3A0F4AF51F2AF4D00061A32E /* Dispatcher.hpp */,
+				3A0F4AF71F2AF4E80061A32E /* ISerialisable.cpp */,
+				3A0F4AF81F2AF4E80061A32E /* ISerialisable.hpp */,
+				3A0F4AFA1F2AF4F90061A32E /* Message.cpp */,
+				3A0F4AFB1F2AF4F90061A32E /* Message.hpp */,
+				3A0F4AFD1F2AF50C0061A32E /* MessageIterator.cpp */,
+				3A0F4AFE1F2AF50C0061A32E /* MessageIterator.hpp */,
+				3A0F4B001F2AF5190061A32E /* Context.cpp */,
+				3A0F4B011F2AF5190061A32E /* Context.hpp */,
+				3A0F4B061F2B02010061A32E /* EmptyFactory.cpp */,
+				3A0F4B071F2B02010061A32E /* EmptyFactory.hpp */,
+				3A0F4B091F2B020C0061A32E /* Socket.cpp */,
+				3A0F4B0A1F2B020C0061A32E /* Socket.hpp */,
+				3A0F4B0C1F2B04990061A32E /* Exception.cpp */,
+				3A0F4B0D1F2B04990061A32E /* Exception.hpp */,
+			);
+			name = Messaging;
+			sourceTree = "<group>";
+		};
+		3A0F4AF01F2AF3E20061A32E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		3AF641031F2629A500866A3F = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +114,8 @@
 		3AF6410E1F2629A600866A3F /* Automan */ = {
 			isa = PBXGroup;
 			children = (
-				3AF641161F2629E500866A3F /* messaging.cpp */,
+				3A0F4AF01F2AF3E20061A32E /* Classes */,
+				3A0F4AEF1F2AF3D80061A32E /* Messaging */,
 			);
 			path = Automan;
 			sourceTree = "<group>";
@@ -119,7 +177,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF641171F2629E500866A3F /* messaging.cpp in Sources */,
+				3A0F4AF61F2AF4D00061A32E /* Dispatcher.cpp in Sources */,
+				3A0F4AFC1F2AF4F90061A32E /* Message.cpp in Sources */,
+				3A0F4AFF1F2AF50C0061A32E /* MessageIterator.cpp in Sources */,
+				3A0F4B021F2AF5190061A32E /* Context.cpp in Sources */,
+				3A0F4B0E1F2B04990061A32E /* Exception.cpp in Sources */,
+				3A0F4B0B1F2B020C0061A32E /* Socket.cpp in Sources */,
+				3A0F4AF31F2AF3F60061A32E /* Messaging.cpp in Sources */,
+				3A0F4B081F2B02010061A32E /* EmptyFactory.cpp in Sources */,
+				3A0F4AF91F2AF4E80061A32E /* ISerialisable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +282,8 @@
 		3AF641141F2629A600866A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +291,8 @@
 		3AF641151F2629A600866A3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +316,7 @@
 				3AF641151F2629A600866A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
