@@ -16,6 +16,10 @@
 		3A0F4B081F2B02010061A32E /* EmptyFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4B061F2B02010061A32E /* EmptyFactory.cpp */; };
 		3A0F4B0B1F2B020C0061A32E /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4B091F2B020C0061A32E /* Socket.cpp */; };
 		3A0F4B0E1F2B04990061A32E /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F4B0C1F2B04990061A32E /* Exception.cpp */; };
+		3A783A771F32147400786B2A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A783A761F32147400786B2A /* main.cpp */; };
+		3A783A7A1F32148900786B2A /* ATM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A783A781F32148900786B2A /* ATM.cpp */; };
+		3A783A7D1F32149600786B2A /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A783A7B1F32149600786B2A /* Customer.cpp */; };
+		3A783A801F3214A400786B2A /* WithdrawlRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A783A7E1F3214A400786B2A /* WithdrawlRequest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +53,13 @@
 		3A0F4B0A1F2B020C0061A32E /* Socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Socket.hpp; sourceTree = "<group>"; };
 		3A0F4B0C1F2B04990061A32E /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
 		3A0F4B0D1F2B04990061A32E /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
+		3A783A761F32147400786B2A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3A783A781F32148900786B2A /* ATM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ATM.cpp; sourceTree = "<group>"; };
+		3A783A791F32148900786B2A /* ATM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ATM.hpp; sourceTree = "<group>"; };
+		3A783A7B1F32149600786B2A /* Customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
+		3A783A7C1F32149600786B2A /* Customer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Customer.hpp; sourceTree = "<group>"; };
+		3A783A7E1F3214A400786B2A /* WithdrawlRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WithdrawlRequest.cpp; sourceTree = "<group>"; };
+		3A783A7F1F3214A400786B2A /* WithdrawlRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WithdrawlRequest.hpp; sourceTree = "<group>"; };
 		3AF6410C1F2629A600866A3F /* Automan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Automan; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +102,12 @@
 		3A0F4AF01F2AF3E20061A32E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3A783A781F32148900786B2A /* ATM.cpp */,
+				3A783A791F32148900786B2A /* ATM.hpp */,
+				3A783A7B1F32149600786B2A /* Customer.cpp */,
+				3A783A7C1F32149600786B2A /* Customer.hpp */,
+				3A783A7E1F3214A400786B2A /* WithdrawlRequest.cpp */,
+				3A783A7F1F3214A400786B2A /* WithdrawlRequest.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -116,6 +133,7 @@
 			children = (
 				3A0F4AF01F2AF3E20061A32E /* Classes */,
 				3A0F4AEF1F2AF3D80061A32E /* Messaging */,
+				3A783A761F32147400786B2A /* main.cpp */,
 			);
 			path = Automan;
 			sourceTree = "<group>";
@@ -178,13 +196,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0F4AF61F2AF4D00061A32E /* Dispatcher.cpp in Sources */,
+				3A783A801F3214A400786B2A /* WithdrawlRequest.cpp in Sources */,
 				3A0F4AFC1F2AF4F90061A32E /* Message.cpp in Sources */,
 				3A0F4AFF1F2AF50C0061A32E /* MessageIterator.cpp in Sources */,
+				3A783A7D1F32149600786B2A /* Customer.cpp in Sources */,
 				3A0F4B021F2AF5190061A32E /* Context.cpp in Sources */,
 				3A0F4B0E1F2B04990061A32E /* Exception.cpp in Sources */,
 				3A0F4B0B1F2B020C0061A32E /* Socket.cpp in Sources */,
 				3A0F4AF31F2AF3F60061A32E /* Messaging.cpp in Sources */,
 				3A0F4B081F2B02010061A32E /* EmptyFactory.cpp in Sources */,
+				3A783A7A1F32148900786B2A /* ATM.cpp in Sources */,
+				3A783A771F32147400786B2A /* main.cpp in Sources */,
 				3A0F4AF91F2AF4E80061A32E /* ISerialisable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
