@@ -9,6 +9,19 @@
 #ifndef Exception_hpp
 #define Exception_hpp
 
-#include <stdio.h>
+#include <stdexcept>
+#include <string>
 
+#include <errno.h>
+
+#include <zmq.h>
+
+namespace Messaging {
+    class Exception : public std::runtime_error {
+    public:
+        Exception(const std::string &what, const errno_t errnum = errno) :
+        std::runtime_error(what + std::string(" - ") + std::string(zmq_strerror(errnum)))
+        {}
+    };
+}
 #endif /* Exception_hpp */
